@@ -831,3 +831,8 @@ if [ -z "$TST_NO_DEFAULT_RUN" ]; then
 		fi
 	fi
 fi
+
+# Unset the locale cocerned variables
+for env in $(locale | cut -f 1 -d =); do
+	unset $env
+done
