@@ -49,7 +49,7 @@ TMPDIR=${TMPDIR:-/tmp}
 export LTPROOT TMPDIR
 
 # Check the environment variable for the test
-. check_envval || exit 1
+. tst_net_check_envval.sh || exit 1
 
 # Arguments
 if [ $# -ne 2 ]; then

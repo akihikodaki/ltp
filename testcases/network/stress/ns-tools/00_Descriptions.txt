@@ -2,9 +2,6 @@ This directory stores the utilities for the network stress tests
 
 ====
 
-check_envval
-	Check the environment variable for the network stress test
-
 get_ifname
 	Get the interface name which belongs to the specified test link
 

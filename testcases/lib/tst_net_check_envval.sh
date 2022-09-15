@@ -22,10 +22,10 @@
 ################################################################################
 #
 # File:
-#   check_envval
+#   tst_net_check_envval.sh
 #
 # Description:
-#   Check the environment variable for the network stress test
+#   Check the environment variable for network tests
 #
 # Returns:
 #   0: All necessary environment variables are set.

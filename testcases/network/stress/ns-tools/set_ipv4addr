@@ -55,7 +55,7 @@ LTPROOT=${LTPROOT:-`(cd ../../../../ ; pwd)`}
 export LTPROOT
 
 # Check the environmanet variable for the test
-. check_envval || exit 1
+. tst_net_check_envval.sh || exit 1
 
 # Arguments
 if [ $# -ne 4 ]; then

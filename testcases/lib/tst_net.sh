@@ -1057,3 +1057,6 @@ if [ -z "$TST_USE_LEGACY_API" ] && ! tst_cmd_available ping6; then
 		export _tst_net_ping6_warn_printed=1
 	fi
 fi
+
+# Check the environment variable for the test
+. tst_net_check_envval.sh || exit 1
