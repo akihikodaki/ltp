@@ -43,14 +43,9 @@
 $trace_logic
 
 . cmdlib.sh
+. tst_net.sh
 
-exists cut locale rsh
-
-# Unset the locale cocerned variables
-for env in `locale | cut -f 1 -d '='` ; do
-    unset $env
-done
-unset LANGUAGE
+exists cut rsh
 
 # RHOST
 RHOST=${RHOST:=127.0.0.1}

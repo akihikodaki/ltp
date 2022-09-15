@@ -447,3 +447,9 @@ if [ "$TST_NEEDS_CHECKPOINTS" = "1" ]; then
 	ROD_SILENT chmod 600 "$LTP_IPC_PATH"
 	export LTP_IPC_PATH
 fi
+
+# Unset the locale cocerned variables
+for env in `locale | cut -f 1 -d '='` ; do
+    unset $env
+done
+unset LANGUAGE
